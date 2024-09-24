@@ -90,7 +90,7 @@ function addScore(num){
         // handle error
       }).then(score => {
         sessionStorage.setItem("user",userId);
-        window.location.assign("homePage.html");
+        // window.location.assign("homePage.html");
       }).catch(error => {
         // handle error
       })

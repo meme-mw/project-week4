@@ -41,7 +41,7 @@ function signUp(){
     east: "",
     south: "",
     hijaz: "",
-    najd:"",
+    najd: "",
     userId:id
             })
           }).then(res => {

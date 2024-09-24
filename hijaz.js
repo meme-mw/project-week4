@@ -53,7 +53,7 @@ q1Cgoices.forEach((q1c)=>{
    });
 });
 
-function submit(){
+function submit1(){
    
      let num=0;
    
