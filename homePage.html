@@ -1,0 +1,54 @@
+<!DOCTYPE html >
+<html dir="rtl" lang="ar" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body >
+    <nav> هلا بك يا <span class="name"></span></nav>
+    <main class="container  d-flex  justify-content-center " style="height:80%;min-width:100%;margin:auto">
+        
+        <div class="row" style="width:100%;">
+              <div class="col-sm d-flex flex-column justify-content-between align-items-center">
+                   
+                      <h3>اختر المنطقة واختبر لهجتك </h3>
+                      <figure class="saudi " style="height:80%">
+                        <img src="mappoint.png" alt="" srcset="" class="point east" href="east.html" >
+                        <img src="mappoint.png" alt="" srcset="" class="point hijaz" href="hijaz.html">
+                        <img src="mappoint.png" alt="" srcset="" class="point south" href="south.html">
+                        <img src="mappoint.png" alt="" srcset="" class="point najd" onclick="location.href='najd.html'">
+                        <img src="mappoint.png" alt="" srcset="" class="point north" href="north.html">
+                        <img src="saudi.png" alt="" class="saudi-img" >
+                        
+                      </figure>
+                      
+                      
+                    
+              </div>
+              <div class="col-sm d-flex flex-column justify-content-between align-items-center">
+                
+                    <h3>نتيجتك في التحدي  </h3>
+                    <ul class="d-flex justify-content-center align-items-center flex-wrap" style="font-weight: bold;height: 80%;width:50%;">
+                      <li id=north style="color:#F5C93F">اللهجة الشمالية</li>
+                      <li id=najd style="color:#E96C06">اللهجة النجدية </li>
+                      <li id=hijaz style="color:#465097">اللهجة الحجازية</li>
+                      <li id=east style="color:#748229">اللهجة الشرقاوية</li>
+                      <li id=south style="color:#00ADB1">اللهجة الجنوبية</li>
+                    </ul>
+                  
+              </div> 
+
+        </div>
+    </main>
+
+   <footer>
+    @2024
+   </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="homePage.js"></script>
+</body>
+</html>
