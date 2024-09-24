@@ -30,19 +30,19 @@ function getScores(){
       }).then(scores => {
         scores.forEach(scores => {
             if(scores.najd<=3){
-                document.querySelector("#najd").append(`${scores.najd}/3`);
+                document.querySelector("#najd").innerHTML=`اللهجة النجدية ${scores.najd}/3`;
             }
             if(scores.east<=3){
-                document.querySelector("#east").append(`${scores.east}/3`);
+                document.querySelector("#east").innerHTML=`اللهجة الشرقاوية ${scores.east}/3`;
             }
             if(scores.hijaz<=3){
-                document.querySelector("#hijaz").append(`${scores.hijaz}/3`);
+                document.querySelector("#hijaz").innerHTML=` اللهجة الحجازية${scores.hijaz}/3`;
             }
             if(scores.south<=3){
-                document.querySelector("#south").append(`${scores.south}/3`);
+                document.querySelector("#south").innerHTML=` اللهجة الجنوبية${scores.south}/3`;
             }
             if(scores.north<=3){
-                document.querySelector("#north").append(`${scores.north}/3`);
+                document.querySelector("#north").innerHTML=`اللهجة الشمالية ${scores.north}/3`;
             }
         });
       

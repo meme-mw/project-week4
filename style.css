@@ -170,9 +170,13 @@ footer{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+ 
 }
 
 .button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+.checkd{
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
 input[type="radio"]{
