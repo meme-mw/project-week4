@@ -21,8 +21,8 @@ function signUp(){
         }
         // handle error
       }).then(user => {
-        sessionStorage.setItem("user",user.id);
-        window.location.assign("homePage.html");
+        createScores(user.id);
+      
         // do something with the new task
       }).catch(error => {
         // handle error
@@ -30,5 +30,30 @@ function signUp(){
         alert("user name must be more than 3 letters and includes 1 capital letter and password must bemore than 4 number and enter correct email");
       }
     
+    }
+    function createScores(id){
+        fetch(`https://66ea7db455ad32cda47915a6.mockapi.io/exam/scores`, {
+            method: 'POST',
+            headers: {'content-type':'application/json'},
+            // Send your data in the request body as JSON
+            body: JSON.stringify({
+                north: "",
+    east: "",
+    south: "",
+    hijaz: "",
+    najd:"",
+    userId:id
+            })
+          }).then(res => {
+            if (res.ok) {
+                return res.json();
+            }
+            // handle error
+          }).then(score => {
+            sessionStorage.setItem("user",id);
+            window.location.assign("homePage.html");
+          }).catch(error => {
+            // handle error
+          })
     }
     document.querySelector("#signUp").addEventListener('click',signUp);

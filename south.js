@@ -76,8 +76,8 @@ function submit(){
 }
 
 function addScore(num){
-    fetch(`https://66ea7db455ad32cda47915a6.mockapi.io/exam/users/${userId}/scores`, {
-        method: 'POST',
+    fetch(`https://66ea7db455ad32cda47915a6.mockapi.io/exam/scores/${userId}`, {
+        method: 'PUT',
         headers: {'content-type':'application/json'},
         // Send your data in the request body as JSON
         body: JSON.stringify({

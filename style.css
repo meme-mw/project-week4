@@ -5,17 +5,31 @@ html,body{
     height: 100vh;
     width:100%;
     
-     background-color: #FFF;
+     background-color:   #F1F1F2 !important;
 }
 nav{
     width:100%;
     padding:1rem;
-    background-color: #DC4A42;
-    color:white;
+    color:  #194760;
+    background-color:transparent;
+    font-weight: bold;
+    
+}
+h3{
+  font-size: 16px !important;
+  color:#6BCAC8;
+  
 }
 form{
   max-width:30rem;
  width:100%;
+}
+.design{
+  position: absolute;
+  bottom:35%;
+  left:-8.8vw;
+  width:20vw;
+  transform: rotate(90deg);
 }
 .container{
   height:100%;
@@ -71,7 +85,7 @@ input:focus{
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
-  line-height: 1.25;
+  line-height: 1;
   margin: 0;
   min-height: 3rem;
   padding: calc(.875rem - 1px) calc(1.5rem - 1px);
@@ -112,12 +126,13 @@ input:focus{
 } */
 footer{
     width:100%;
-    position:absolute;
+    position:fixed;
     bottom:0;
     text-align:center;
     z-index:5;
-    background-color: #DC4A42;
-    color:white;
+color:  #194760;
+     background-color:   #F1F1F2;
+    
 }
 
 .saudi{
@@ -137,7 +152,7 @@ footer{
 }
 
 .north{
-  top:50px;
+  top:40px;
   left:-80px;
 }
 
@@ -188,4 +203,57 @@ label{
 
 li{
   width: 8rem;
+}
+ .south{
+  top:210px;
+  left: -50px;
+ }
+
+ .najd{
+  top: 170px;
+  left: -10px;
+ }
+
+ .east{
+  top: 170px;
+  left: -10px;
+ }
+ .hijaz{
+  top: 140px;
+  left: -150px;
+ }
+
+
+/* CSS */
+.button-13 {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.button-13:hover {
+  background-color: #f7fafa;
+}
+
+.button-13:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
 }
